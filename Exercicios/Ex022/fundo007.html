@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
     <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
         #container {
-            position: relative;
-            height: 94vh;
+            position: absolute;
+            height: 80vh;
+            width: 100vh;
             padding: 10px;
-            background: purple url(imagens/target001.png);
+            background: rgb(9, 30, 223) url(imagens/target001.png);
             background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
 
         #conteudo {
